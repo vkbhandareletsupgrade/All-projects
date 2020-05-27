@@ -144,6 +144,10 @@ width:100%;
      }
   }
     @media(max-width:500px){
+      .logo  img{
+      width:100%;
+        max-width:100%;
+}
       .navlinks{
         position: absolute;
         top:72px;

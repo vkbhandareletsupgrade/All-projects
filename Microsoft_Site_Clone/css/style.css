@@ -140,6 +140,9 @@ a {
      }
   }
     @media(max-width:500px){
+      .logo img{
+        width:100%;
+      }
       .navlinks{
         position: absolute;
         top:72px;

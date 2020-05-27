@@ -46,7 +46,7 @@ a {
 }
 .logo {
      
-    width: 30%;
+    width: 10%;
     padding: 11px 0;
     height: 45px;
 }
@@ -142,8 +142,8 @@ a {
   }
     @media(max-width:500px){
       .logo  img{
-      width:100%;
-        max-width:100%;
+       width:100%;
+       
 }
       .navlinks{
         position: absolute;

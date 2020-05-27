@@ -131,18 +131,15 @@ a {
     }
     @media(max-width:768px){
       .card-container{
-      grid-template-columns: repeat(1,1fr);
+      grid-template-columns: repeat(2,1fr);
       margin-bottom: 10px;
      }
      .grid{
-      grid-template-columns: repeat(1,1fr);
+      grid-template-columns: repeat(2,1fr);
       margin: 0 0 0 50px;
      }
   }
     @media(max-width:500px){
-      .logo img{
-        width:100%;
-      }
       .navlinks{
         position: absolute;
         top:72px;

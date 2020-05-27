@@ -25,7 +25,7 @@ a {
   height: 10vh;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  
   overflow: hidden;
   /* background-color: aquamarine; */
 }
@@ -34,7 +34,7 @@ a {
   height: 10vh;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+ 
 }
 .logo,
 .middle {
@@ -139,6 +139,9 @@ a {
       margin: 0 0 0 50px;
      }
   }
+
+
+
     @media(max-width:500px){
       .navlinks{
         position: absolute;

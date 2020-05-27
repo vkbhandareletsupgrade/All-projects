@@ -1,0 +1,73 @@
+@import "main.css";
+@import "threesection.css";
+
+@import "footer.css";
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body a{
+    font-family: monospace;
+    text-decoration: none;
+    font-size:16px;
+    text-decoration: none;
+}
+body {  
+    
+    overflow-x: hidden;  
+}
+.mainheader{
+    width: 100%;
+    height:100px;
+    background-color: silver;
+    background-image: linear-gradient(to right,#0F2027,#2C5364,#203A43,#2C5364,#2C5364);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    border:3px solid transparent;
+    border-bottom-color: seagreen;
+    /* position: fixed; */
+    
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.navlinks a{
+    padding: 0 42px;;
+    margin:10px 0;
+    text-decoration: none;
+    color:white;
+    font-weight: 700;
+}
+ .active a{
+    color:yellowgreen;
+}
+
+/* --------------------------- */
+
+    .responsive {
+        max-width: 100%;
+        height: auto;
+
+}
+.card22 p, p{
+    line-height: 25px;
+    }
+  
+
+   @media (max-width:500px){
+       .mainheader{
+           flex-direction: column;
+       }
+       .logo, 
+       .navlinks{
+           width: 100%;
+           margin-bottom: 10px;
+       }
+   }

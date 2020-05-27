@@ -1,0 +1,77 @@
+@import "footer.css";
+@import "aboutintro.css";
+@import "aboutinfo.css";
+@import "aboutgrid.css";
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body a {
+  font-family: monospace;
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+.mainheader {
+  width: 100%;
+  height: 100px;
+  max-height:100%;
+  background-image: linear-gradient(
+    to right,
+    #0f2027,
+    #2c5364,
+    #203a43,
+    #2c5364,
+    #2c5364
+  );
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: auto 40px;
+  border: 3px solid transparent;
+  border-bottom-color: seagreen;
+  /* position: fixed; */
+}
+
+.navlinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.navlinks a {
+  padding: 0 42px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+.active a {
+  color: yellowgreen;
+}
+
+/* --------------------------- */
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+/* -------------------------- */
+
+/* ------------------- */
+@media (max-width:500px){
+  .mainheader{
+    flex-direction: column;
+  }
+  .logo,
+  .navlinks{
+    width: 100%;
+  }
+}
+

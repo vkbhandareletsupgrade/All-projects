@@ -1,0 +1,17 @@
+ /* -------------------------- */
+
+ footer{
+    display:grid;
+    grid-template-columns: 50% 50%;; 
+    grid-template-rows: 50px 50px;
+    grid-gap: 3px;
+    }
+    .footercontent , .footercontent2{
+
+        padding:30px  30px;
+        margin:10px 30px;
+        text-align: center;
+    }
+    footer{
+        background-color: rgba(72, 110, 180, 0.329);
+    }

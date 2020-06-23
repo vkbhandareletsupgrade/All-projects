@@ -2,7 +2,7 @@
 @import "about-section.css";
 @import "myskills-section.css";
 @import "tools-section.css";
-@import "portfolio-section.css";
+@import "footer.css";
 
 * {
   padding: 0;
@@ -27,11 +27,10 @@ a {
   color: var(--black);
 }
 
-
 a:hover {
   text-decoration: none;
   color: black;
-  font-size: 14px;
+  
 }
 ul {
   list-style: none;
@@ -59,7 +58,7 @@ body {
   overflow-x: hidden;
   font-family: popLight;
   cursor: pointer;
-  
+
   /* background: url('../images/parallex-img.png')center center/cover;
     background-attachment: fixed;
    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
@@ -112,23 +111,22 @@ body {
 .mainheader .logo {
   min-width: 15%;
   text-align: center;
-  /* background-color: cornflowerblue; */
+  transition: all 0.3s ease-in;
+  padding: 0 0;
 }
+  /* background-color: cornflowerblue; */
+
+
 .mainheader .logo h1 {
   width: 100%;
   color: var(--white);
   font-size: 30px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s ease-in;
   animation: slideinleft 1.7s;
 }
-.mainheader .logo h1:hover {
-  width: 100%;
-  border-color: #d20d75;
-  border: 1px solid;
-  padding: 5px;
-  transition: all 0.3s ease-in;
-}
+
 .mainheader nav {
   min-width: 60%;
   text-align: center;
@@ -152,11 +150,14 @@ body {
   color: var(--white);
   border: 1px solid white;
   padding: 7px;
-  transition: all 0.3s ease-in;}
+  transition: all 0.3s ease-in;
+}
 .mainheader .hamburger {
   min-width: 10%;
   text-align: center;
   display: none;
+  animation: slideinright 1.7s;
+  transition: all 0.3s ease-in;
   /* background-color: cornflowerblue; */
 }
 .mainheader .hamburger i {
@@ -170,7 +171,7 @@ body {
     background-color: #151515;
     transition: all 0.6s ease-in;
   }
-  .header.change .navlinks a{
+  .header.change .navlinks a {
     transition: all 0.6s ease-in;
   }
 }
@@ -201,8 +202,8 @@ body {
     background-color: black;
     transition: all 0.6s ease-in;
   }
-  .header.change .hamburger i{
-    color:white;
+  .header.change .hamburger i {
+    color: white;
   }
   .mainheader .hamburger {
     display: block;
@@ -267,7 +268,8 @@ body {
   .bottom-shape {
     top: -50px;
   }
-  .aboutme , .myskills{
+  .aboutme,
+  .myskills {
     padding: 70px 40px 40px 70px;
   }
   .tools-section {
@@ -278,9 +280,8 @@ body {
   .intro-img {
     width: 192px;
     height: 181px;
-    
   }
-  .intro-right{
+  .intro-right {
     margin-bottom: 45px;
     margin-right: 42px;
   }
@@ -288,103 +289,116 @@ body {
     min-width: 189px;
     height: 182px;
   }
+  
+
   /* ------------------------ */
+  .tools-left-container{
+    width: 192px;
+    height: 181px;
+  }
   .tools-left-container img {
-    min-width: 189px;
-    height: 182px;
-}
-.aboutme , .myskills{
-  padding: 70px 40px 40px 70px;
-}
-.tools-section {
-  padding: 193px 0 0 0;
-}
-@media (max-width: 500px) {
-  .header.change .mainheader {
-    height: 10vh;
-    min-width: 90%;
-    margin-top: 5px;
-    padding: 0 33px;
-}
-.header.change .hamburger i{ 
-  color: white;
-  transition: all 0.3s ease-in;
-}
-
-  .navlinks {
-    top: 83px;
-  }
-  .header.change .navlinks {
-    top: 73px;
-    width: 50%;
-  }
-  .header .hamburger i {
-    color: var(--white);
-    transition: all 0.6s ease-in;
-  }
-  .mainheader {
-    min-width: 100%;
-    height: 10vh;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .mainheader .logo h1,
-  .intro-left h1 {
-    font-size: 25px;
-  }
-  .intro-section {
-    width: 100%;
-    padding: 120px 0;
-  }
-  .intro-container {
-    flex-direction: column;
-    margin-top: 40px;
-  }
-  .intro-right {
-    margin: 66px 20px 10px 0;
-  }
-  .intro-left .btn-intro-cta {
-    padding: 6px 7px;
-    margin: 13px 0 0 73px;
-  }
-  .intro-right img {
     min-width: 200px;
-    height: 200px;
+    height: 200px;  
+    display: block;
+    object-fit: cover;
   }
-  .bottom-shape {
-    display: none;
-  }
-  /* ---------- */
-  .aboutme {
-    padding: 0 29px;
-  }
-  .about-bottom-border {
-    width: 50%;
-  }
-  .about-container h1 {
-    width: 100%;
-    font-size: 25px;
-  }
-  .about-container {
-    margin-bottom: 20px;
-  }
-  /* ---------------- */
-
+  .aboutme,
   .myskills {
-    padding: 0 29px;
+    padding: 70px 40px 40px 70px;
   }
-  .myskills-container h1 {
-    font-size: 25px;
+  
+  @media (max-width: 500px) {
+    .header.change .mainheader {
+      height: 10vh;
+      min-width: 90%;
+      margin-top: 5px;
+      padding: 0 33px;
+    }
+    .header.change .hamburger i {
+      color: white;
+      transition: all 0.3s ease-in;
+    }
+    .mainheader .logo :hover {
+      color: var(--white);
+      transition: all 0.3s ease-in;
+    }
+    .navlinks {
+      width: 40%;
+      top: 94px;
   }
-  .myskills,
-  .myskills-container p {
-    font-size: 13px;
+    .header.change .navlinks {
+      top: 73px;
+      width: 50%;
+    }
+    .header .hamburger i {
+      color: var(--white);
+      animation: slideinright 1.7s;
+      transition: all 0.3s ease-in;
+    }
+    .mainheader {
+      min-width: 100%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .mainheader .logo h1,
+    .intro-left h1 {
+      font-size: 25px;
+    }
+    .intro-section {
+      width: 100%;
+      padding: 120px 0;
+    }
+    .intro-container {
+      flex-direction: column;
+      margin-top: 40px;
+    }
+    .intro-right {
+      margin: 66px 20px 10px 0;
+    }
+    .intro-left .btn-intro-cta {
+      padding: 6px 7px;
+      margin: 13px 0 0 73px;
+    }
+    .intro-right img {
+      min-width: 200px;
+      height: 200px;
+    }
+    .bottom-shape {
+      display: none;
+    }
+    /* ---------- */
+    .aboutme {
+      padding: 0 29px;
+    }
+    .about-bottom-border {
+      width: 50%;
+    }
+    .about-container h1 {
+      width: 100%;
+      font-size: 25px;
+    }
+    .about-container {
+      margin-bottom: 20px;
+    }
+    /* ---------------- */
+
+    .myskills {
+      padding: 0 29px;
+    }
+    .myskills-container h1 {
+      font-size: 25px;
+    }
+    .myskills,
+    .myskills-container p {
+      font-size: 13px;
+    }
+    .myskills-container p {
+      font-weight: 600;
+    }
   }
-  .myskills-container p {
-    font-weight: 600;
-  }}
   .skills {
     line-height: 1;
   }
@@ -392,15 +406,20 @@ body {
   .tools-section {
     width: 100%;
     height: 100%;
-    padding: 37px 0;
+    padding: 37px 0 0;
+  }
+  .tool-both{
+  flex-direction: column;
   }
   .tools-right-container ul {
     margin-left: 35px;
   }
   .tools-left-container img {
-    width: 130px;
-    height: 180px;
     display: block;
     object-fit: cover;
+    margin-bottom: 15px;
+  }
+  .tools-right-container h1{
+    margin-top: 15px;
   }
 }

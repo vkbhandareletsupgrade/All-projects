@@ -138,16 +138,17 @@ i:hover {
 }
 @media (max-width: 500px) {
   .logo img {
-    /* background-color: brown; */
+   background-color: brown; 
     width: 100%;
-    height: 30px; 
+    height: 50px; 
     min-width: 100%;
     min-height: 30px;
     margin-top: 7px;
   }
   .navlinks {
     position: absolute;
-    top: 72px;
+    top: 100px;
+	
   }
   .card-container {
     grid-template-columns: repeat(1, 1fr);
